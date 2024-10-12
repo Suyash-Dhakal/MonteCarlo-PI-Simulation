@@ -10,10 +10,9 @@ int main()
     long int i, count = 0, n;
     long double x, y, z, pi;  // Use long double for precision
     double start, end, wall_clock_time;
+    
     printf("n = ");
     scanf("%ld", &n);
-
-    start = omp_get_wtime(); // Record the start time
 
     // Monte Carlo simulation for estimating the value of pi
     for(i = 0; i < n; ++i) {
@@ -26,8 +25,8 @@ int main()
         }
     }
 
-    pi = ((long double)count * 4) / n;  // Calculate the approximation of π
-    printf("Approximate PI = %.9Lf\n", pi);  // Print the result
+    pi = ((long double)count * 4) / n;  // Estimate of Pi
+    printf("Approximate PI = %.9Lf\n", pi); 
 
     return 0;
 }
