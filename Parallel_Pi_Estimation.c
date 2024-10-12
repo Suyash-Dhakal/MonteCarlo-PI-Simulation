@@ -26,8 +26,8 @@ int main() {
     #pragma omp for private(x, y, z)
     
     for(long int i = 0; i < n; ++i) {
-        x = (long double)rand_r(&seed) / RAND_MAX;  // Generate random x in [0, 1)
-        y = (long double)rand_r(&seed) / RAND_MAX;  // Generate random y in [0, 1)
+        x = (long double)rand_r(&seed) / RAND_MAX;  // Generate random x in [0, 1]
+        y = (long double)rand_r(&seed) / RAND_MAX;  // Generate random y in [0, 1]
         z = x * x + y * y;                   // Check if inside the unit circle
 
         if(z <= 1) {
