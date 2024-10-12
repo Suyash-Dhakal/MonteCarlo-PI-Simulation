@@ -30,11 +30,10 @@
 <p>To compile and run the code, use the following commands:</p>
 <ol>
     <li>For the serial implementation:</li>
-    <pre><code>gcc monte_carlo_serial.c -o monte_carlo_serial</code></pre>
-    <pre><code>./monte_carlo_serial</code></pre>
-
+    <pre><code>gcc monte_carlo_serial.c</code></pre>
+    <pre><code>./a.out</code></pre>
     <li>For the parallel implementation:</li>
-    <pre><code>gcc monte_carlo_parallel.c -o monte_carlo_parallel -fopenmp</code></pre>
+    <pre><code>gcc-14 -fopenmp monte_carlo_serial.c -o monte_carlo_parallel</code></pre>
     <pre><code>./monte_carlo_parallel</code></pre>
 </ol>
 
