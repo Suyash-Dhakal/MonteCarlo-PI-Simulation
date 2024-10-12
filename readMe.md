@@ -16,6 +16,7 @@
 <ul>
     <li><strong>Device:</strong> Apple MacBook Air M2</li>
     <li><strong>Memory:</strong> 16GB</li>
+    <li><strong>CPU:</strong> 8-core CPU with 4 performance cores and 4 efficiency cores</li>
 </ul>
 
 <h2>Files Included</h2>
